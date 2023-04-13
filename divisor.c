@@ -8,7 +8,7 @@
 //     {
 //         if (n % i == 0)
 //         {
-//             printf("%d ",i);
+//             printf("%d\n",i);
 //         }
         
 //     }
@@ -41,7 +41,7 @@ int main(){
     int f_num = n/10;
     int s_num = n%10;
     
-    if (f_num % s_num == 0 || s_num % f_num == 0)
+    if (s_num % f_num == 0 || f_num % s_num == 0)
     {
         printf("YES");
     }else

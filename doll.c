@@ -4,35 +4,34 @@
 // ৩। একটি চোখ, একটি মুখ এবং একটি শরীর দিয়ে
 #include <stdio.h>
 int main(){
-    int eye,mouth,body,doll=0;
-    scanf("%d%d%d",&eye,&mouth,&body);
+    long long int eye,mouth,body,doll=0;
+    scanf("%lld %lld %lld",&eye,&mouth,&body);
         // case1 for the third option.we can ignore option 2.
-        if (eye<mouth && eye<body)
+        if (eye<=mouth && eye<=body)
         {
             doll = eye + doll;
-        }else if (mouth<eye && mouth<body)
+        }else if (mouth<=eye && mouth<=body)
         {
             doll = mouth + doll;
-        }else if (body<eye && body<mouth)
+        }else if (body<=eye && body<=mouth)
         {
             doll = body + doll;
         }
-        // printf("%d",doll);
+
     
-    // case 2 for 1st option.
-    eye = eye - doll;
-    body = body - doll;
-    
-    int update_eye = eye/2;
-    if (update_eye < body)
-    {
-        doll = doll + update_eye;
-    }else
-    {
-        doll = doll + body;
-    }
-    printf("%d",doll);
-    
+        // case 2 for 1st option.
+        eye = eye - doll;
+        body = body - doll;
+        
+        long long int update_eye = eye/2;
+        if (update_eye <= body)
+        {
+            doll = doll + update_eye;
+        }else
+        {
+            doll = doll + body;
+        }
+        printf("%lld",doll);
     
     return 0;
 }
