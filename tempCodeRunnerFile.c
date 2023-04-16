@@ -1,3 +1,4 @@
- int x;
-    scanf("%d",&x);
-    int ans = -1;
+if (i % 2 == 0)
+        {
+            printf("%d ",arr[i]);
+        }
