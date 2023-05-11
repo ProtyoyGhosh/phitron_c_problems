@@ -1,10 +1,10 @@
-/*print it
-    *
-    **
-    ***
-    ****
-    *****
-*/
+// /*print it
+//     *
+//     **
+//     ***
+//     ****
+//     *****
+// */
 
 // #include <stdio.h>
 // int main(){
@@ -26,13 +26,13 @@
 
 
 
-/*print it
-   *****
-   ****
-   ***
-   **
-   *
-*/
+// /*print it
+//    *****
+//    ****
+//    ***
+//    **
+//    *
+// */
 
 // #include <stdio.h>
 // int main(){
@@ -53,13 +53,13 @@
 
 
 
-/*
-      *
-     ***
-    *****
-   *******
-  *********
-*/
+// /*
+//       *
+//      ***
+//     *****
+//    *******
+//   *********
+// */
 // #include <stdio.h>
 // int main(){
 //     int n,s,k;
@@ -88,13 +88,13 @@
 
 
 
-/*print it
-     *********
-      *******
-       *****
-        ***
-         *
-*/
+// /*print it
+//      *********
+//       *******
+//        *****
+//         ***
+//          *
+// */
 // #include <stdio.h>
 // int main(){
 //     int n,s,k;
@@ -122,13 +122,13 @@
 
 
 
-/*print it
- 1
- 1 2
- 1 2 3
- 1 2 3 4
- 1 2 3 4 5
-*/
+// /*print it
+//  1
+//  1 2
+//  1 2 3
+//  1 2 3 4
+//  1 2 3 4 5
+// */
 // #include <stdio.h>
 // int main(){
 //     int n,k=1;
@@ -148,13 +148,13 @@
 
 
 
-/*print it
- 1 2 3 4 5
- 1 2 3 4
- 1 2 3
- 1 2
- 1
-*/
+// /*print it
+//  1 2 3 4 5
+//  1 2 3 4
+//  1 2 3
+//  1 2
+//  1
+// */
 // #include <stdio.h>
 // int main(){
 //     int n;
@@ -176,18 +176,18 @@
 
 
 
-/*print it (diamond pattern)
-    *
-   ***
-  *****
- *******
-*********
- *******
-  *****
-   ***
-    *
-here if n=5,total line (2*n-1)=9
-*/
+// /*print it (diamond pattern)
+//     *
+//    ***
+//   *****
+//  *******
+// *********
+//  *******
+//   *****
+//    ***
+//     *
+// here if n=5,total line (2*n-1)=9
+// */
 // #include <stdio.h>
 // int main(){
 //     int n,s,k;
@@ -223,7 +223,7 @@ here if n=5,total line (2*n-1)=9
 
 
 
-// check sum of two values equal given number x
+// // check sum of two values equal given number x
 // #include <stdio.h>
 // int main(){
 //     int n;
@@ -258,52 +258,185 @@ here if n=5,total line (2*n-1)=9
 
 
 
-// slection sort,sort in assending or dessending order
-#include <stdio.h>
-int main(){
-    int n;
-    scanf("%d",&n);
-    int arr[n];
-    for (int i = 0; i < n; i++)
-    {
-        scanf("%d",&arr[i]);
-    }
-    // assending
-    for (int i = 0; i < n-1; i++)
-    {
-        for (int j = i+1; j < n; j++)
-        {
-            if (arr[i] > arr[j])
-            {
-                int temp = arr[i];
-                arr[i] = arr[j];
-                arr[j] = temp;
-            }
-        }
+// // slection sort,sort in assending or dessending order
+// #include <stdio.h>
+// int main(){
+//     int n;
+//     scanf("%d",&n);
+//     int arr[n];
+//     for (int i = 0; i < n; i++)
+//     {
+//         scanf("%d",&arr[i]);
+//     }
+//     // assending
+//     for (int i = 0; i < n-1; i++)
+//     {
+//         for (int j = i+1; j < n; j++)
+//         {
+//             if (arr[i] > arr[j])
+//             {
+//                 int temp = arr[i];
+//                 arr[i] = arr[j];
+//                 arr[j] = temp;
+//             }
+//         }
         
-    }
-    for (int i = 0; i < n; i++)
-    {
-        printf("%d ",arr[i]);
-    }
-    printf("\n");
-    // dessending
-    for (int i = 0; i < n-1; i++)
-    {
-        for (int j = i+1; j < n; j++)
-        {
-            if (arr[i] < arr[j])
-            {
-                int temp = arr[i];
-                arr[i]=arr[j];
-                arr[j]=temp;
-            }
-        }
-    }
-    for (int i = 0; i < n; i++)
-    {
-        printf("%d ",arr[i]);
-    }
+//     }
+//     for (int i = 0; i < n; i++)
+//     {
+//         printf("%d ",arr[i]);
+//     }
+//     printf("\n");
+
+//     // dessending
+//     for (int i = 0; i < n-1; i++)
+//     {
+//         for (int j = i+1; j < n; j++)
+//         {
+//             if (arr[i] < arr[j])
+//             {
+//                 int temp = arr[i];
+//                 arr[i]=arr[j];
+//                 arr[j]=temp;
+//             }
+//         }
+//     }
+//     for (int i = 0; i < n; i++)
+//     {
+//         printf("%d ",arr[i]);
+//     }
     
-    return 0;
-}
+//     return 0;
+// }
+
+
+
+
+// Given a number N. Print a face down right angled triangle that has N rows
+// #include <stdio.h>
+// int main(){
+//     int n,k;
+//     scanf("%d",&n);
+//     k=n;
+//     for (int i = 0; i < n; i++)
+//     {
+//         for (int j = 1; j <= k; j++)
+//         {
+//             printf("*");
+//         }
+//         printf("\n");
+//         k--;
+        
+//     }
+    
+//     return 0;
+// }
+
+
+
+
+// Given a number N. Print a pyramid that has N rows.
+// #include <stdio.h>
+// int main(){
+//     int n,s,k;
+//     scanf("%d",&n);
+//     s=n-1;
+//     k=1;
+//     for (int i = 0; i < n; i++)
+//     {
+//         for (int j = 1; j <= s; j++)
+//         {
+//             printf(" ");
+//         }
+//         for (int j = 1; j <= k; j++)
+//         {
+//             printf("*");
+//         }
+//         s--;
+//         k+=2;
+//         printf("\n");
+//     }
+    
+//     return 0;
+// }
+
+
+
+
+
+// Given a number N. Print a diamond that has 2N rows.
+// #include <stdio.h>
+// int main(){
+//     int n,s,k;
+//     scanf("%d",&n);
+//     s=n-1;
+//     k=1;
+//     for (int i = 1; i <= n; i++)
+//     {
+//         for (int j = 1; j <= s; j++)
+//         {
+//             printf(" ");
+//         }
+//         for (int j = 1; j <= k; j++)
+//         {
+//             printf("*");
+//         }
+//        s--;
+//        k+=2;
+//        printf("\n");
+//     }
+    
+//     int ss=0;
+//     int kk=2*n-1;
+//     for (int i = 0; i < n; i++)
+//     {
+//         for (int j = 1; j <= ss; j++)
+//         {
+//             printf(" ");
+//         }
+//         for (int j = 1; j <= kk; j++)
+//         {
+//             printf("*");
+//         }
+//         ss++;
+//         kk-=2;
+//         printf("\n");
+//     }
+    
+//     return 0;
+// }
+
+
+
+
+// Given a number N and an array A of N numbers. Print the numbers after sorting them.
+// #include <stdio.h>
+// int main(){
+//     int n;
+//     scanf("%d",&n);
+//     int arr[n];
+//     for (int i = 0; i < n; i++)
+//     {
+//         scanf("%d",&arr[i]);
+//     }
+//     for (int i = 0; i < n-1; i++)
+//     {
+//         for (int j = i+1; j < n; j++)
+//         {
+//             int swap;
+//             if (arr[i] > arr[j])
+//             {
+//                 swap = arr[i];
+//                 arr[i] = arr[j];
+//                 arr[j] = swap;
+//             }
+//         }
+//     }
+//     for (int i = 0; i < n; i++)
+//     {
+//         printf("%d ",arr[i]);
+//     }
+    
+    
+//     return 0;
+// }
