@@ -1,14 +1,7 @@
-for (int i = 0; i < 2; i++)
+int m1,m2;
+    // if (n%2==0)
     // {
-    //     for (int j = i+1; j < 3; j++)
-    //     {
-    //         int swap = arr[i];
-    //         if (arr[i] > arr[j])
-    //         {
-    //             arr[i]=arr[j];
-    //             arr[j]=swap;
-    //         }
-            
-    //     }
-        
+    //     m1=n/2;
+    //     m2=(n/2)+1;
     // }
+    // printf("%d %d",arr[m1-1],arr[m2-1]);

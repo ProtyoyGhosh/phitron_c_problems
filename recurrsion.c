@@ -191,3 +191,129 @@ Note: Solve this problem using recursion.
 //     printf("%lld",result);
 //     return 0;
 // }
+
+
+
+
+
+/*
+Given a number N. Print the digits of N separated by a space.
+Note: Solve this problem using recursion.
+*/
+// #include <stdio.h>
+// void fun(int n){
+//     if (n == 0) return;
+//     int x = n % 10;
+//     fun(n/10);
+//     printf("%d ",x);
+// }
+// int main(){
+//     int test_case;
+//     scanf("%d",&test_case);
+//     for (int i = 0; i < test_case; i++)
+//     {
+//         int n;
+//         scanf("%d",&n);
+//         if (n == 0)
+//         {
+//             printf("0");
+//         }
+        
+//         fun(n);
+//         printf("\n");
+//     }
+//     return 0;
+// }
+
+
+
+
+
+/*
+Given a string S. Print number of vowels in the string.
+Note:
+Vowel letters: ['a', 'e', 'i', 'o', 'u'].
+Vowel letters could be capital or small.
+Solve this problem using recursion.
+*/
+// #include <stdio.h>
+// int fun(char s[],int i){
+//     if (s[i] == '\0') return 0;
+    
+//     int count = fun(s,i+1);
+//     if (s[i] >= 'A' && s[i] <= 'Z')
+//     {
+//         s[i] = s[i] + 32;
+//     }
+
+//     if (s[i] == 'a' || s[i] == 'e' || s[i] == 'i' || s[i] == 'o' || s[i] == 'u')
+//     {
+//         return count+1;
+//     }else
+//     {
+//         return count;
+//     }
+    
+    
+// }
+// int main(){
+//     char s[205];
+//     fgets(s,205,stdin);
+//     int ans = fun(s,0);
+//     printf("%d",ans);
+//     return 0;
+// }
+
+
+
+
+
+// Given a number N. Print factorial of N.
+// #include <stdio.h>
+// long long int fun(long long int n){
+//     if (n == 0) return 1;
+//     long long int ans = fun(n-1);
+//     return ans * n;
+// }
+// int main(){
+//     long long int n;
+//     scanf("%lld",&n);
+//     long long int fact = fun(n);
+//     printf("%lld",fact);
+//     return 0;
+// }
+
+
+
+
+/*
+Given a number N and an array A of N numbers. Print the maximum value in this array.
+Note: Solve this problem using recursion.
+*/
+#include <stdio.h>
+#include <limits.h>
+int fun(int arr[],int n,int i){
+    if (i == n) return INT_MIN ;
+    
+    int max = fun(arr,n,i+1);
+    if (max > arr[i])
+    {
+        return max;
+    }else
+    {
+        return arr[i];
+    }
+    
+}
+int main(){
+    int n;
+    scanf("%d",&n);
+    int arr[n];
+    for (int i = 0; i < n; i++)
+    {
+        scanf("%d",&arr[i]);
+    }
+    int ans = fun(arr,n,0);
+    printf("%d",ans);
+    return 0;
+}
